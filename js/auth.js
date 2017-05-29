@@ -10,6 +10,9 @@ initApp = function() {
       uid = user.uid;
       if(firebase.database().ref(userId) == null) {
         writeUserData(userId, displayName, email);
+      } else {
+        console.log(firebase.database.ref(userId));
+        console.log(userId);
       }
       location.reload();
       user.getToken().then(function(accessToken) {
