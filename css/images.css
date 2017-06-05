@@ -86,9 +86,9 @@ button {
 /* Modal Content/Box */
 .modal-content {
    background-image : url(../images/paperLink.jpg);
-    margin: 11%  23%; /* 5% from the top, 15% from the bottom and centered */
+    margin: 150px  410px; /* 5% from the top, 15% from the bottom and centered */
     border: 1px solid #888;
-    width: 15%; /* Could be more or less, depending on screen size */
+    width: 200px; /* Could be more or less, depending on screen size */
 }
 
 /* Clear floats */
