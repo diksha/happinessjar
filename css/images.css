@@ -1,0 +1,106 @@
+#arrow {
+    position: absolute;
+    z-index: 1;
+    left: 450px; width: 100px; height: 100px; top:350px;
+}
+#goodJob {
+    position: absolute;
+    z-index: 1;
+    left: 470px; width: 100px; height: 100px; top:355px;
+}
+#addMemory {
+    position: absolute;
+    left: 370px; width: 300px; height: 300px; top:205px;
+}
+#great {
+    position: absolute;    left: 470px; width: 300px; height: 300px; top:105px;
+}
+
+#happyEyes {
+    position: absolute;
+    z-index: 1;
+    left: 260px; width: 100px; height: 100px; top:550px;
+}
+#peepinto {
+    position: absolute;
+    left: 80px; width: 300px; height: 300px; top:350px;
+}
+.jar {
+    position: absolute;
+    left: 250px; top: 300px; width: 500px; height: 500px; 
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn,.signupbtn {
+    float: left;
+    width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: block; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+   background-image : url(../images/paperLink.jpg);
+    margin: 11%  23%; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 15%; /* Could be more or less, depending on screen size */
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+        width: 100%;
+    }
+}

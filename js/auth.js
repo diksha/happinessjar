@@ -8,13 +8,12 @@ initApp = function() {
       var displayName = user.displayName;
       var email = user.email;
       uid = user.uid;
-      if(firebase.database().ref(userId) == null) {
-        writeUserData(userId, displayName, email);
-      } else {
-        console.log(firebase.database.ref(userId));
-        console.log(userId);
-      }
-      location.reload();
+
+
+      firebase.database().ref().child(uid).once('value', function(snapshot) {
+          if(snapshot.val() === null)
+             writeUserData(uid, displayName, email);
+        });
       user.getToken().then(function(accessToken) {
         console.log("user signed in");
       });

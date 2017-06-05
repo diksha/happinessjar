@@ -18,13 +18,35 @@
 <button type="submit" onclick="deleteMemory()">Delete Memory</button> -->
 
 <div id="body" >
-<img src="images/addMemory.png" id="addMemory" /> 
-<img onclick="location.href='insertMemory.html';" src="images/arrow_down.png" id="arrow" />
-<img src="images/peepinto.png" id="peepinto" /> 
-<img onclick="location.href='showMemory.html';" src="images/happy_eyes.png" id="happyEyes" />
-<img src="images/added.png" class="jar" /> 
+
+<img src="images/2.png" class="jar" /> 
+</div>
+<!-- The Modal -->
+<!-- The Modal -->
+<div id="id01" class="modal">
+  <form class="modal-content animate">
+    <div class="container">
+      <label><b>What great did you do?</b></label>
+      <input type="text" placeholder="Enter your amazing " name="email" id="text">
+
+      <label><b>When did you do it?</b></label>
+      <input type="date" id="date" name="psw" >
+      <div class="clearfix">
+      <input type="text" style="display:none" id="hiddenId">
+        <button type="button" onclick="deleteMemory()" class="cancelbtn">Delete Memory</button>
+      </div>
+    </div>
+  </form>
 </div>
 </body>
 
 <script src="js/interaction.js"></script>
+<script>
+	document.onreadystatechange = function(){
+     if(document.readyState === 'complete'){
+        getMemory();
+     }
+}
+
+</script>
 </html>
