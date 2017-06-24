@@ -44,8 +44,7 @@ function getMemory() {
 		firebase.auth().onAuthStateChanged(function(user) {
 			getRandomMemory(user.uid, function(memory) {
 				console.log(memory["text"]);
-				document.getElementById("text").value = memory["text"];
-				document.getElementById("date").value = memory["date"];
+				document.getElementById("text").value = memory["date"] + memory["text"] ;
 			});
 		});
 	}
