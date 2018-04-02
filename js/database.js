@@ -34,7 +34,6 @@ function getRandomMemory(userId, callback) {
 			var x = Math.floor(Math.random() * (currentNumber));
 			console.log(x);
 			var key = Object.keys(snapshot.val())[x];
-			document.getElementById("hiddenId").value = key["text"] + key["date"];
                         document.getElementById("hiddenId").style.display = "block";
 			callback(snapshot.val()[key]);
 		});
@@ -44,6 +43,7 @@ function getMemory() {
 	if(uid === undefined){
 		firebase.auth().onAuthStateChanged(function(user) {
 			getRandomMemory(user.uid, function(memory) {
+				document.getElementById("hiddenId").value = key["text"] + key["date"];
 				console.log(memory["text"]);
 			});
 		});
